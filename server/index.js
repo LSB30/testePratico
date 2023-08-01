@@ -2,7 +2,7 @@ import express from 'express';
 import mysql from 'mysql';
 import cors from 'cors';
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 const db = mysql.createPool({
   host: 'localhost',

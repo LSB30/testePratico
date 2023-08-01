@@ -1,0 +1,18 @@
+CASO O ARQUIVO contadortags_url_tags.sql não funcione,
+basta apenas criar a tabela
+
+CREATE TABLE `url_tags` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `url` varchar(245) NOT NULL DEFAULT ' ',
+  `tag_name` varchar(45) NOT NULL,
+  `quantidade` int NOT NULL,
+  PRIMARY KEY (`id`)
+
+======================================
+Com o banco de dados criado, abra o arquivo testePratico com vs code,
+entre na pasta client e de npm install e depois npm run dev, para rodar
+o servidor.
+Depois entre na pasta server e de npm install e depois npm start, para rodar
+o banco de dados.
+
+Peço desculpas, não achei uma forma de colocar o banco de dados no ar.
